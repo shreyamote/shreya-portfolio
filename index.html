@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Shreya Vilas Mote — Software Engineer specializing in scalable full-stack systems, distributed data platforms, AI/ML, and intelligent automation.">
+<title>Shreya Mote — Software Engineer • AI/ML • Full-Stack • Data Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b10;--panel:#0d131b;--panel2:#111a24;--line:#1d2a38;--text:#eef4f7;--muted:#91a1af;--accent:#7de0bd;--accent2:#8bb8ff;--warm:#ffd47d;--danger:#ff8c78;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button{font:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;height:70px;background:rgba(7,11,16,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-inner{max-width:var(--max);height:100%;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.03em}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:13px;font-weight:600}.navlinks a:hover{color:#fff}
+.nav-cta{padding:10px 14px;border:1px solid rgba(125,224,189,.45);border-radius:10px;color:var(--accent);font-size:12px;font-weight:800}
+.hero{min-height:760px;padding:130px 24px 90px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 25%,rgba(82,145,255,.13),transparent 28%),radial-gradient(circle at 15% 80%,rgba(125,224,189,.08),transparent 28%)}
+.hero::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:80px;border:1px solid rgba(125,224,189,.13);border-radius:50%;box-shadow:0 0 0 60px rgba(125,224,189,.018),0 0 0 120px rgba(125,224,189,.012);pointer-events:none}
+.hero-inner{max-width:var(--max);width:100%;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:58px;align-items:center;position:relative;z-index:2}
+.eyebrow{font-family:'DM Mono',monospace;color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(40px,5.5vw,72px);line-height:.98;letter-spacing:-.065em;margin:0 0 20px;max-width:700px}.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-lead{font-size:clamp(16px,1.8vw,20px);color:#c7d1d9;max-width:650px;margin:0 0 20px;line-height:1.5}
+.hero-sub{font-size:14px;color:var(--muted);max-width:620px;margin:0 0 30px;line-height:1.6}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 17px;border-radius:11px;font-weight:800;font-size:13px;border:1px solid var(--line);background:#111923;transition:.2s}
+.btn.primary{background:var(--accent);color:#07100d;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);border-color:#456173}
+.hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+.hero-meta strong{display:block;color:#eef4f7;font-size:13px;margin-bottom:3px}
+.terminal{border:1px solid #263543;background:linear-gradient(145deg,#0c131b,#0a1016);border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.term-top{height:38px;border-bottom:1px solid #1b2732;display:flex;align-items:center;padding:0 14px;gap:7px}
+.term-dot{width:8px;height:8px;border-radius:50%;background:#33414e}
+.term-title{margin-left:8px;color:#6f7e8b;font:11px 'DM Mono',monospace}
+.term-body{padding:25px;font:12px/1.85 'DM Mono',monospace;color:#9db0bf}
+.term-body .key{color:var(--accent)}.term-body .value{color:#e8f0f4}.term-body .blue{color:var(--accent2)}.term-body .warm{color:var(--warm)}
+.section{padding:100px 24px}
+.section.alt{background:#0a1017;border-top:1px solid rgba(255,255,255,.035);border-bottom:1px solid rgba(255,255,255,.035)}
+.wrap{max-width:var(--max);margin:auto}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+.section-head h2{font-size:clamp(28px,3.8vw,44px);letter-spacing:-.05em;line-height:1.05;margin:0}
+.section-head p{max-width:510px;color:var(--muted);margin:0;font-size:14px}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.proof{padding:22px;border:1px solid var(--line);border-radius:15px;background:var(--panel);min-height:155px}
+.proof .num{font:11px 'DM Mono',monospace;color:var(--accent);margin-bottom:15px}
+.proof h3{font-size:17px;margin:0 0 7px}.proof p{font-size:13px;color:var(--muted);margin:0}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.role-card{padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#0e151d,#0b1118);border-radius:16px}
+.role-card .role-num{font:11px 'DM Mono',monospace;color:var(--warm)}
+.role-card h3{margin:10px 0 8px;font-size:20px}.role-card p{color:var(--muted);font-size:13px;margin:0 0 16px}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chips span,.tags span{font:10px 'DM Mono',monospace;border:1px solid #263746;color:#aebdca;border-radius:999px;padding:5px 8px;background:#0b131b}
+.projects{display:grid;gap:16px}
+.project-card{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:25px;border:1px solid var(--line);border-radius:16px;background:var(--panel);transition:.2s}
+.project-card:hover{transform:translateY(-2px);border-color:#34495a}
+.project-no{font:12px 'DM Mono',monospace;color:var(--accent);padding-top:4px}
+.project-kicker{font:10px 'DM Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.project-card h3{font-size:22px;letter-spacing:-.03em;margin:6px 0 8px}
+.project-card p{color:#b3c0ca;font-size:13px;max-width:850px;margin:0 0 14px;line-height:1.6}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.map-wrap{position:relative;width:100%;aspect-ratio:3/2;background:#05090d;border:1px solid #263541;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+.map-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;user-select:none}
+.map-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,9,13,.08),transparent 30%,rgba(5,9,13,.12));pointer-events:none}
+.map-hotspot{position:absolute;border:0;background:transparent;padding:0;cursor:pointer;z-index:4}
+.map-hotspot .frame-focus{position:absolute;inset:0;border:1px solid transparent;border-radius:9%;background:rgba(125,224,189,.01);transition:.18s}
+.map-hotspot:hover .frame-focus,.map-hotspot:focus-visible .frame-focus{border-color:var(--accent);background:rgba(125,224,189,.11);box-shadow:0 0 0 2px rgba(7,11,16,.35),0 0 24px rgba(125,224,189,.35)}
+.map-hotspot .frame-label{position:absolute;left:50%;bottom:7px;transform:translate(-50%,100%);opacity:0;white-space:nowrap;background:#07100e;color:#dffcf1;border:1px solid rgba(125,224,189,.55);border-radius:7px;padding:5px 8px;font:10px 'DM Mono',monospace;transition:.18s;pointer-events:none}
+.map-hotspot:hover .frame-label,.map-hotspot:focus-visible .frame-label{opacity:1;transform:translate(-50%,0)}
+.map-note{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:var(--muted);font:11px 'DM Mono',monospace}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.skill{border:1px solid var(--line);background:var(--panel);padding:18px;border-radius:13px}
+.skill strong{font-size:13px;display:block;margin-bottom:8px;color:var(--accent)}
+.skill span{font-size:12px;color:#b3c0ca;line-height:1.6;display:block}
+.achieve-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.achieve{padding:25px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.achieve h3{margin:0 0 14px;font-size:19px;color:var(--text)}
+.achieve ul{margin:0;padding-left:18px;color:#b5c1ca;font-size:13px}
+.achieve li+li{margin-top:10px}
+.footer{padding:90px 24px 45px;background:#060a0f;border-top:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+.contact h2{font-size:clamp(35px,5vw,60px);line-height:1;letter-spacing:-.055em;margin:0 0 15px}
+.contact p{color:var(--muted);max-width:600px;margin:0}
+.contact-card{border:1px solid #304352;background:#0d151e;border-radius:15px;padding:20px;min-width:320px}
+.contact-card .label{font:10px 'DM Mono',monospace;color:var(--accent);text-transform:uppercase}
+.contact-card a{display:block;margin-top:8px;color:#fff;font-weight:700}
+.fineprint{margin-top:55px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#53616d;font:10px 'DM Mono',monospace}
+.modal{position:fixed;inset:0;z-index:100;display:none;padding:20px;align-items:center;justify-content:center;background:rgba(3,7,11,.82);backdrop-filter:blur(10px)}
+.modal.open{display:flex}
+.modal-card{width:min(620px,94vw);max-height:85vh;overflow:auto;background:#0d151d;border:1px solid #304454;border-radius:18px;box-shadow:0 40px 100px rgba(0,0,0,.65);padding:32px;position:relative}
+.modal-close{position:absolute;right:15px;top:15px;width:34px;height:34px;border-radius:999px;border:1px solid #2b3b48;background:#101b24;color:#c9d3da;cursor:pointer}
+.modal-kicker{font:10px 'DM Mono',monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.1em}
+.modal h3{font-size:30px;line-height:1.05;margin:9px 0 6px;letter-spacing:-.04em}
+.modal-role{color:var(--warm);font-size:13px;margin-bottom:18px}
+.modal p{color:#b8c4cd;font-size:14px;line-height:1.6}
+.modal .modal-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}
+.modal .modal-tags span{font:10px 'DM Mono',monospace;color:#a9bbc7;border:1px solid #293a48;border-radius:999px;padding:6px 9px}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero{padding-top:110px}.terminal{max-width:680px}.proof-grid,.role-grid{grid-template-columns:1fr}.skill-grid{grid-template-columns:repeat(2,1fr)}.achieve-grid{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.contact-card{min-width:0}.navlinks{display:none}}
+@media(max-width:600px){.section{padding:72px 17px}.hero{padding:105px 17px 70px;min-height:700px}.nav-inner{padding:0 17px}h1{font-size:40px}.hero-meta{gap:14px}.project-card{grid-template-columns:1fr;gap:8px}.skill-grid{grid-template-columns:1fr}.map-wrap{border-radius:13px}.map-note{font-size:9px;flex-direction:column;gap:5px}.modal-card{padding:27px 20px}.modal h3{font-size:26px}.fineprint{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#top">SM<span>.</span></a>
+    <div class="navlinks">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#roles">Role fit</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+    </div>
+    <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">SOFTWARE ENGINEER • FULL-STACK DISTRIBUTED • DATA & AI</div>
+      <h1>Hi, I'm <em>Shreya Mote.</em><br>I turn complexity into <em>scalable automation.</em></h1>
+      <p class="hero-lead">Software Engineer building <strong>scalable full-stack systems, distributed data platforms, and AI-powered applications.</strong></p>
+      <p class="hero-sub">I build across Java, Spring Boot, Python, React, Apache Spark, Kafka, ML, GenAI, RAG, Computer Vision, and intelligent automation — turning "this is complicated" into "yeah, 
+        we can automate that."</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">VIEW ENGINEERING WORK ↓</a>
+        <a class="btn" href="#contact">OPEN RECRUITER CARD →</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Current Role</strong>Technology Application Developer @ Citi</div>
+        <div><strong>Target roles</strong>Software Engineer · Data Analyst · Data Scientist · AI & Full-Stack</div>
+        <div><strong>Education</strong>B.Tech Computer Engineering · Cummins College, Pune</div>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="term-top">
+        <i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i>
+        <span class="term-title">shreya@portfolio:~</span>
+      </div>
+      <div class="term-body">
+      <div><span class="key">$ whoami</span></div>
+      <div class="value">shreya_mote / senior software engineer — data, backend & ai platforms</div><br>
+
+      <div><span class="key">$ expertise --core</span></div>
+      <div class="blue">backend engineering — java, spring boot, microservices, REST APIs</div>
+      <div class="blue">data engineering — apache spark, python, sql, distributed data processing</div>
+      <div class="blue">full-stack engineering — react, angular, scalable web applications</div>
+      <div class="blue">ai engineering — genai, llms, rag, vectorless rag & intelligent automation</div>
+      <div class="blue">cloud & devops — aws, ci/cd, docker, jenkins, harness & production systems</div><br>
+
+      <div><span class="key">$ engineer --approach</span></div>
+      <div class="warm">design → build → integrate → optimize → automate → scale</div><br>
+
+      <div><span class="key">$ built --for</span></div>
+      <div class="value">high-performance, secure & scalable enterprise systems</div>
+      <div class="value">distributed data platforms & production-grade microservices</div>
+      <div class="value">ai-powered applications, data pipelines & engineering automation</div><br>
+
+      <div><span class="key">$ signal</span></div>
+      <div class="value">building reliable systems where backend engineering, data & ai come together.</div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Why a recruiter should<br>keep scrolling.</h2>
+      <p>I build technology that solves real production problems: high-volume streaming data pipelines, secure enterprise AML architectures, multimodal AI navigation, and automated PII discovery platforms.</p>
+    </div>
+    <div class="proof-grid">
+      <div class="proof">
+        <div class="num">01 / DISTRIBUTED & FULL-STACK</div>
+        <h3>High-Volume Systems</h3>
+        <p>Engineered streaming and batch data pipelines with Spark, Kafka, Hadoop, GemFire & Hazelcast, alongside enterprise Java Spring Boot and React microservices.</p>
+      </div>
+      <div class="proof">
+        <div class="num">02 / AI, RAG & COMPUTER VISION</div>
+        <h3>Applied GenAI & Vision</h3>
+        <p>Built Graph RAG navigation platforms (YOLOv12n, Gemini 2.5), zero-shot entity classification (DeBERTa-v3, GLINER), and custom GitHub Copilot agents.</p>
+      </div>
+      <div class="proof">
+        <div class="num">03 / PROVEN IMPACT</div>
+        <h3>Global Recognition</h3>
+        <p>Global Winner of Allianz Tech Championship 2024, Citi's "Remarkable Contributions in Tech" award winner, and published Scopus-indexed ML researcher.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roles">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Where I fit.</h2>
+      <p>Three core engineering directions I bring deep technical ownership and execution to.</p>
+    </div>
+    <div class="role-grid">
+      <div class="role-card">
+        <div class="role-num">01 / FULL-STACK & BACKEND ENGINEER</div>
+        <h3>Microservices & APIs</h3>
+        <p>Architect robust RESTful microservices, custom OAuth2 authentication/authorization modules, HashiCorp Vault security, and scalable React/AngularJS frontends.</p>
+        <div class="chips"><span>Java</span><span>Spring Boot</span><span>React</span><span>OAuth2 / Vault</span><span>MySQL</span></div>
+      </div>
+      <div class="role-card">
+        <div class="role-num">02 / DATA PLATFORM & DISTRIBUTED SYSTEMS</div>
+        <h3>High-Volume ETL & Streaming</h3>
+        <p>Modernize real-time streaming and batch pipelines, build reusable Python/Java ETL utilities, and integrate distributed caching for extreme scale.</p>
+        <div class="chips"><span>Apache Spark</span><span>Kafka</span><span>Hadoop / Hive</span><span>GemFire</span><span>Hazelcast</span></div>
+      </div>
+      <div class="role-card">
+        <div class="role-num">03 / AI / ML & GENAI ENGINEER</div>
+        <h3>Intelligent Automation</h3>
+        <p>Design multimodal AI, Graph/Vectorless RAG pipelines, fine-tuned LLMs, multi-engine OCR, and custom engineering automation tooling.</p>
+        <div class="chips"><span>Graph RAG</span><span>LLMs / PyTorch</span><span>OpenCV</span><span>LangChain</span><span>NLP / NER</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Professional Experience.</h2>
+      <p>Enterprise engineering impact across high-scale banking platforms and AI/ML research environments.</p>
+    </div>
+    <div class="projects">
+      
+      <article class="project-card" style="grid-template-columns:170px 1fr">
+        <div class="project-no">JUL 2025 – CURRENT<br><span style="font-size:10px;color:var(--muted)">PUNE, INDIA</span></div>
+        <div class="project-main">
+          <div class="project-kicker">Citi • Full-Time</div>
+          <h3>Technology Application Developer</h3>
+          <p>
+            • Modernized enterprise-scale batch and real-time streaming data platforms using Hadoop, Hive, Apache Spark, and Kafka, architecting distributed ETL, streaming, and event-driven processing for high-volume workloads.<br>
+            • Integrated GemFire and Hazelcast distributed caching / in-memory data grid architectures to optimize data access, replication, synchronization, performance, and scalability across distributed systems.<br>
+            • Built reusable Python/Java ETL frameworks, SQL processing utilities, workflow schedulers, and deployment automation, eliminating manual processes and improving operational reliability.<br>
+            • Developed AI-automated applications and engineering automation for pipeline optimization, automated analysis, code mapping, dependency lineage, data-flow analysis, and system-impact assessment.<br>
+            • Enhanced an enterprise-scale Anti-Money Laundering (AML) application using Java, Spring Boot, SQL, and React, owning backend architecture, microservices, RESTful APIs, custom OAuth2 authentication/authorization, and HashiCorp Vault secrets management.<br>
+            • Engineered cron-driven batch processing and automated workflows, driving root-cause analysis, performance tuning, and production issue resolution.
+          </p>
+          <div class="tags">
+            <span>Apache Spark</span><span>Kafka</span><span>Hadoop / Hive</span><span>GemFire / Hazelcast</span><span>Java / Spring Boot</span><span>React</span><span>OAuth2 / Vault</span><span>ETL Pipelines</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" style="grid-template-columns:170px 1fr">
+        <div class="project-no">AUG 2024 – JAN 2025<br><span style="font-size:10px;color:var(--muted)">PUNE, MAHARASHTRA</span></div>
+        <div class="project-main">
+          <div class="project-kicker">IBM • Internship</div>
+          <h3>Software / AI Engineering Intern</h3>
+          <p>
+            • Architected and developed a production-oriented PII detection and classification platform using Python, Flask, ReactJS, AWS S3, OpenCV, Microsoft Presidio, NLP, NER, and RESTful microservices.<br>
+            • Designed a multi-engine OCR pipeline integrating image preprocessing (Otsu's Thresholding, Gaussian Blur, CLAHE), CRAFT-based text detection, confidence scoring, ensemble model selection, and OCR error analysis.<br>
+            • Engineered trained NER and rule-based classification pipelines combining DeBERTa-v3 for token classification, GLINER for zero-shot entity recognition, computer vision, and deterministic validation to reliably detect sensitive entities across heterogeneous document layouts.
+          </p>
+          <div class="tags">
+            <span>Python / Flask</span><span>ReactJS</span><span>DeBERTa-v3</span><span>GLINER</span><span>Microsoft Presidio</span><span>OpenCV / CRAFT</span><span>AWS S3</span><span>NLP / NER</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" style="grid-template-columns:170px 1fr">
+        <div class="project-no">JUN 2024 – JUL 2024<br><span style="font-size:10px;color:var(--muted)">PUNE, MAHARASHTRA</span></div>
+        <div class="project-main">
+          <div class="project-kicker">Citi • Internship</div>
+          <h3>Analyst Intern</h3>
+          <p>
+            • Full-Stack Engineering: Engineered an enterprise risk assessment module using Java, Spring Boot, AngularJS, MySQL, and RESTful APIs, applying the Factory Design Pattern for modular software architecture.<br>
+            • Reverse-engineered complex database schemas into normalized ERDs and designed optimized SQL queries using multi-table joins, aggregations, indexing, and query tuning to significantly improve data retrieval performance and backend scalability.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>Spring Boot</span><span>AngularJS</span><span>MySQL</span><span>RESTful APIs</span><span>Factory Pattern</span><span>Query Optimization</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Featured Engineering Projects.</h2>
+      <p>Deep-dive architectures covering Graph RAG, Computer Vision, automated lineage, and PII intelligence platforms.</p>
+    </div>
+    <div class="projects">
+      
+      <article class="project-card">
+        <div class="project-no">01</div>
+        <div class="project-main">
+          <div class="project-kicker">Multimodal AI • Graph RAG • Computer Vision</div>
+          <h3>Drishti — Context-Aware Navigation Platform for Visually Impaired</h3>
+          <p>
+            Architected an end-to-end multimodal AI navigation system using YOLOv12n, Gemini Flash 2.5, Flask, OpenCV, and Graph RAG for real-time visual assistance. Built a computer-vision agentic pipeline to detect and localize objects from live input, feeding scene context to Gemini for reasoning. Designed a RAG pipeline encompassing document ingestion, chunking, knowledge-graph construction, hybrid semantic/graph retrieval, and long-term interaction memory. <strong>Secured 6th place at the SPPU Innovation Competition.</strong>
+          </p>
+          <div class="tags">
+            <span>YOLOv12n</span><span>Gemini Flash 2.5</span><span>Flask</span><span>OpenCV</span><span>Graph RAG</span><span>Knowledge Graph</span><span>Low-Latency Pipeline</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-no">02</div>
+        <div class="project-main">
+          <div class="project-kicker">AI Security • Document Intelligence • Microservices</div>
+          <h3>Production-Oriented PII Detection & Classification Platform (IBM)</h3>
+          <p>
+            Engineered an automated sensitive-data discovery platform across heterogeneous document formats. Integrated multi-engine OCR (CRAFT, Otsu's, CLAHE) with DeBERTa-v3 token classification, GLINER zero-shot NER, Microsoft Presidio, and regex validation inside a microservices architecture backed by AWS S3 and ReactJS.
+          </p>
+          <div class="tags">
+            <span>DeBERTa-v3</span><span>GLINER</span><span>Microsoft Presidio</span><span>Multi-Engine OCR</span><span>Python Flask</span><span>AWS S3</span><span>ReactJS</span>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="project-card">
+        <div class="project-no">03</div>
+        <div class="project-main">
+          <div class="project-kicker">AI/ML • Sustainability Analytics • RAG</div>
+          <h3>AI-Driven Sustainability & Carbon Intelligence Platform (Allianz - Global Winner)</h3>
+          <p>
+             Developed a Django-based REST platform with React and Chrome Extension APIs to capture digital-usage telemetry and calculate application-level carbon impact using configurable emission factors.
+      Built ML-based impact simulation and forecasting pipelines using Pandas, NumPy, and Scikit-learn to identify usage trends and evaluate sustainability scenarios.
+      Implemented a RAG-based Generative AI assistant using LangChain to retrieve sustainability knowledge and generate contextual optimization recommendations.
+      Created Streamlit/Power BI dashboards for carbon analytics, sustainability scoring, trend monitoring, and team-level engagement.
+    </p>
+          </p>
+          <div class="tags">
+            <span>Python / Django</span><span>REST APIs</span><span>Scikit-learn / Pandas</span><span>LangChain</span><span>Chrome Extension</span><span>Streamlit</span>
+          </div>
+        </div>
+      </article>
+
+
+
+      <article class="project-card">
+        <div class="project-no">04</div>
+        <div class="project-main">
+          <div class="project-kicker">AI & Software Engineering Automation</div>
+          <h3>AI-Automated Code Lineage & System-Impact Assessment Tool</h3>
+          <p>
+            Built intelligent engineering automation tooling for pipeline optimization, dependency lineage extraction, data-flow analysis, and system-impact assessment across enterprise codebase ecosystems, generating actionable insights for engineering and business stakeholders.
+          </p>
+          <div class="tags">
+            <span>Python / Java</span><span>Dependency Lineage</span><span>Code Mapping</span><span>Pipeline Optimization</span><span>Developer Tooling</span>
+          </div>
+        </div>
+      </article>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Technical Arsenal.</h2>
+      <p>Comprehensive stack across backend, distributed data engineering, AI/ML, and cloud frameworks.</p>
+    </div>
+    <div class="skill-grid">
+      <div class="skill">
+        <strong>Web Full-Stack</strong>
+        <span>React, TypeScript, JavaScript, HTML5, CSS, Java, Spring Boot, Python, Flask, SQL (MySQL), NoSQL (MongoDB), OAuth2</span>
+      </div>
+      <div class="skill">
+        <strong>ML, AI & Deep Learning</strong>
+        <span>NLP, OCR, Neural Networks, LLMs, Vectorless RAG, Graph RAG, Fine-Tuning, PyTorch, Scikit-learn, OpenCV, LangChain, Custom Agents in Copilot</span>
+      </div>
+      <div class="skill">
+        <strong>Distributed & Data Engineering</strong>
+        <span>Apache Spark, Kafka, Hadoop, Hive, GemFire, Hazelcast (Distributed), IBM MQ, Splunk, Impala, Starburst, Elastic, SOA, Networking</span>
+      </div>
+      <div class="skill">
+        <strong>Languages & Core</strong>
+        <span>Java, Python, TypeScript, JavaScript, SQL, C++, Data Structures & Algorithms, Systems Architecture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="achievements">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Achievements & Leadership.</h2>
+      <p>Recognitions from international engineering hackathons, enterprise awards, and academic publications.</p>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve">
+        <h3>Honors & Competitions</h3>
+        <ul>
+          <li><strong>Global Winner — Allianz Tech Championship 2024:</strong> Recognized for engineering an AI-powered solution that solved a complex real-world business problem in an international competition.</li>
+          <li><strong>Citi's "Remarkable Contributions in Tech" Award (2025):</strong> Awarded for outstanding engineering impact, technical ownership, and consistent delivery across enterprise software initiatives.</li>
+          <li><strong>3rd Place — Snowflake Data Cloud Hackathon:</strong> Developed a scalable cloud-native analytics platform adhering to modern data engineering practices.</li>
+          <li><strong>6th Place — SPPU Innovation Competition:</strong> Awarded for "Drishti", a multimodal AI & Graph RAG context-aware navigation platform.</li>
+        </ul>
+      </div>
+      <div class="achieve">
+        <h3>Leadership & Research</h3>
+        <ul>
+          <li><strong>Published Scopus-Indexed Research (Springer ICICT 2024, London):</strong> Authored paper on LSTM-based financial time-series forecasting for USD/INR exchange rate prediction.</li>
+          <li><strong>Cross-Functional Technical Lead (Citi):</strong> Entrusted with leading technical delivery of a high-value cross-functional enterprise project, collaborating with senior engineering, product, and business leaders from design to production.</li>
+          <li><strong>InnerSource Engineering Contributor (Citi):</strong> Built reusable analytics frameworks and ML/DL models that enhanced engineering productivity across teams.</li>
+          <li><strong>B.Tech Computer Engineering:</strong> MKSSS's Cummins College of Engineering for Women, Pune (2021–2025). Coursework in DBMS, OS, DSA, Cloud Computing, DevOps, Computer Networks.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Let's build something<br>remarkable together.</h2>
+        <p>Currently open to discussing engineering roles across Full-Stack Systems, Data Engineering Platforms, and Applied AI / GenAI development.</p>
+      </div>
+      <div class="contact-card">
+        <div class="label">RECRUITER CONTACT CARD</div>
+        <a href="mailto:shreyamote.1573@gmail.com">shreyamote.1573@gmail.com</a>
+        <a href="tel:+918788325901">+91-8788325901</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+        <div style="margin-top:12px;font-size:11px;color:var(--muted)">Location: Pune, Maharashtra, India</div>
+      </div>
+    </div>
+    <div class="fineprint">
+      <div>© SHREYA VILAS MOTE • SOFTWARE ENGINEER</div>
+      <div>PUNE, MAHARASHTRA, INDIA</div>
+    </div>
+  </div>
+</footer>
+</main>
+</body>
+</html>
